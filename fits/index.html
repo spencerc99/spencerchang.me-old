@@ -1472,7 +1472,7 @@ Show all
 </div>
 </div>
 <div class=scrollUp><button onclick="scrollUp('filterFavorites')">Back to top</button></div>
-<script>const getFilterEl=()=>document.getElementById("filterFavorites");function hide(a){a.style.display="none"}function show(a){a.style.display="block"}function filterFits(){debugger;const a=getFilterEl().checked,b=Array.from(document.getElementsByClassName("photoCard")),c=b.filter(a=>!a.querySelector('.photoCardFave'));c.forEach(b=>a?show(b):hide(b))}filterFits()</script>
+<script>const getFilterEl=()=>document.getElementById("filterFavorites");function hide(a){a.style.display="none"}function show(a){a.style.display="block"}function filterFits(){const a=getFilterEl().checked,b=Array.from(document.getElementsByClassName("photoCard")),c=b.filter(a=>!a.querySelector('.photoCardFave'));c.forEach(b=>a?show(b):hide(b))}filterFits()</script>
 </div>
 <div class=summaryList>
 </div>
