@@ -20,7 +20,7 @@
 <meta name=twitter:label1 value=Currently>
 <meta name=twitter:data1 value="Engineering in San Francisco 🌉⛰">
 <meta name=robots content="noodp">
-<link rel=stylesheet href=https://www.spencerchang.me/sass/main.min.32a433c7ddaeceb56e2c9aafc565116585c67c4bc0e27dce9e0771b59369924f.css>
+<link rel=stylesheet href=https://www.spencerchang.me/sass/main.min.32843558bdb74a7514cfb4467125730a02e1d14d10cb556a0bfe93511b8be4ff.css>
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900|Muli:400,500,700,800,900|Cousine:400,400i,700,700i|Playfair+Display:400,400i,500,500i,700|Crimson+Text:400,400i,600,600i,700,700i&display=swap" rel=stylesheet>
 <link rel=stylesheet href=https://unicons.iconscout.com/release/v3.0.6/css/line.css>
 <link rel=stylesheet href=https://unicons.iconscout.com/release/v3.0.6/css/solid.css>
@@ -55,50 +55,40 @@
 <div id=content>
 <div class="headerContainer home">
 <img class=avatar src=/assets/spencer_maker_character.png>
-<h1 id=siteTitle><span class=wave>✌️</span>I'm Spencer</h1>
+<h1 id=siteTitle><button id=emoji class=rotate onclick=updateEmoji()></button>I'm Spencer</h1>
 <div class=description>
 <div>
 Creative technologist and stubborn optimist in 🌉
 </div>
 <div>
 <details>
-<summary>Dreaming, wandering, and laughing</summary>
-<div>
-Seeking truth in paradoxes, beauty in the everyday, and connection in the unknown 🌆
-</div>
-</details>
-</div>
-<div>
-<details>
-<summary>
-Thinking about how we can foster creative agency, encourage <a href=https://mmm.page/helena.soft_tech>soft tech</a>, form societies that put people before systems, scale trust and collaboration in our communities, and express ourselves more authentically and live more fully.
-</summary>
+<summary>Dreaming, wandering, laughing, and thinking about...</summary>
 <div>
 <ul class=noPadding>
 <li>
-How we can give users more agency in the software they use or are used by every day and what does a healthy relationship with <a href=/posts/technology-paradox>technology look like</a>?
+<b>creative agency</b> <br> how we can give users more agency in the software they use or are used by every day and what does a healthy relationship with <a href=/posts/technology-paradox>technology look like</a>?
 </li>
 <li>
-How do we create software that encourages tinkering and authentic expression, where making crazy connections is necessary rather than a nuisance?
+<b><a href=https://mmm.page/helena.soft_tech>soft tech</a></b> <br> how do we create software that encourages tinkering and authentic expression, where making crazy connections is necessary rather than a nuisance?
 </li>
 <li>
-What sort of systems do we need to create a society that cares about enabling every person to live with the privilege to pursue their dreams and create something that they can truly own?
+<b>people over systems</b> <br> what sort of systems do we need to create a society that cares about enabling every person to live with the privilege to pursue their dreams and create something that they can truly own?
 </li>
 <li>
-How do we create environments that provide a low-pressure context for people to fail and learn and scale that trust beyond small local communities?
+<b>authentic expression</b> <br> how do we create environments that provide a low-pressure context for people to fail and learn and scale that trust beyond small local communities?
 </li>
 <li>
-How do we live more fully and intensely and learn to trust ourselves to <a href=/experiments/100posts/opportunity>express ourselves</a> without caveats?
+<b>living fully</b> <br> how do we live more fully and intensely and learn to trust ourselves to <a href=/experiments/100posts/opportunity>express ourselves</a> without caveats?
 </li>
 </ul>
 </div>
 </details>
 </div>
 <div>
-Sometimes <a href=https://www.goodreads.com/user/show/93224420-spencer-chang>reading</a>, sometimes <a href=#summaryList>writing</a>, other times taking <a href=/photos>photos</a>, and often eating. I also enjoy experimenting with <a href=/fits>fashion</a>, dancing, and being in nature.
+I like <a href=#summaryList>writing</a>, taking <a href=/photos>photos</a>, <a href=https://www.goodreads.com/user/show/93224420-spencer-chang>reading</a>, and eating (and sharing). I also enjoy experimenting with <a href=/fits>fashion</a>, dancing, and being in nature.
 </div>
 <div>
-Working to empower people to collaborate and create at <a id=coda href=https://coda.io>Coda</a>. I built out our <a href=/posts/rituals-remixing>custom templates platform</a> and now work on the <a href=https://coda.io/packs>Packs platform</a> so that anyone can extend Coda's capabilities.
+I spent my days building tools for tinkers at <a id=coda href=https://coda.io>Coda</a>. I built out our <a href=/posts/rituals-remixing>custom templates platform</a> and now work on the <a href=https://coda.io/packs>Packs platform</a> so that anyone can extend Coda's capabilities.
 </div>
 <div>
 I'm always looking to learn about different perspectives and jam with curious people. Say hi <span class=wave>👋</span> (<a href=https://twitter.com/@spencerc99>Twitter</a>, <a href=mailto:spencerc99@gmail.com>email</a>)
@@ -123,6 +113,7 @@ I'm always looking to learn about different perspectives and jam with curious pe
 </div>
 <iframe class=subscribe src=https://spencerchang.substack.com/embed style="border:1px solid #eee;background:#fff" frameborder=0 scrolling=no></iframe>
 </div>
+<script>const shuffleArray=a=>{for(let b=a.length-1;b>0;b--){const c=Math.floor(Math.random()*(b+1)),d=a[b];a[b]=a[c],a[c]=d}};let emojis=['✌️','😤','🥸','👀','💫','🍥','☔️'];shuffleArray(emojis);var idx=0;function updateEmoji(){let a=emojis[idx];document.getElementById('emoji').innerHTML=a,idx=(idx+1)%emojis.length}updateEmoji()</script>
 <div class=mainContainer>
 <div class=homepage-content>
 </div>
@@ -165,9 +156,6 @@ a response to <a href=https://reboothq.substack.com>reboot</a>&rsquo;s manifesto
 </div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/liminal-illusions/images/margarita_hu92decf418872c11413285555b62e0bac_958709_400x0_resize_q75_box.jpeg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -185,6 +173,9 @@ a response to <a href=https://reboothq.substack.com>reboot</a>&rsquo;s manifesto
 <div class=postSummary>
 exploring the liminality of vegas and how it exposes the absurdity of our day-to-day
 </div>
+</div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/liminal-illusions/images/margarita_hu92decf418872c11413285555b62e0bac_958709_400x0_resize_q75_box.jpeg>
 </div>
 </article>
 <article class=postSummaryContainer>
@@ -208,9 +199,6 @@ Compliments are one of the few things that are infinite energy machines. It’s 
 </div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/denim-personality/images/baby-spencer_hu4a7b98e1e034f018e96c703434aa11f4_4084488_400x0_resize_box_3.png>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -229,11 +217,11 @@ Compliments are one of the few things that are infinite energy machines. It’s 
 an exploration of how fashion becomes a part of your personality, why it came to matter so much to me, and rejecting the “uniform”
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/denim-personality/images/baby-spencer_hu4a7b98e1e034f018e96c703434aa11f4_4084488_400x0_resize_box_3.png>
+</div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/technology-paradox/images/highway_hud3b3bc5c397a30a0169d6e6adb21484d_80785_400x0_resize_q75_box.jpeg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -251,6 +239,9 @@ an exploration of how fashion becomes a part of your personality, why it came to
 <div class=postSummary>
 on my paradoxical relationship with technology
 </div>
+</div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/technology-paradox/images/highway_hud3b3bc5c397a30a0169d6e6adb21484d_80785_400x0_resize_q75_box.jpeg>
 </div>
 </article>
 <article class=postSummaryContainer>
@@ -314,9 +305,6 @@ a cap to my time in New York. On post-travel sadness and what places leave you w
 </div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/commitment-and-obligation/images/memorial_park_huff766f4cb466061ee1a9b11bc12815ce_9108462_400x0_resize_box_3.png>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -335,11 +323,11 @@ a cap to my time in New York. On post-travel sadness and what places leave you w
 I was taught that hard work would bring you riches. That effort was the key to success in whatever you did&mldr;
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/commitment-and-obligation/images/memorial_park_huff766f4cb466061ee1a9b11bc12815ce_9108462_400x0_resize_box_3.png>
+</div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/rituals-remixing/images/rituals-remixing_hu994033bde3c5007a2901b392f8d8f085_4918444_400x0_resize_q75_box.jpg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -357,11 +345,11 @@ I was taught that hard work would bring you riches. That effort was the key to s
 The details behind Coda&rsquo;s custom templates system.
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/rituals-remixing/images/rituals-remixing_hu994033bde3c5007a2901b392f8d8f085_4918444_400x0_resize_q75_box.jpg>
+</div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/craft-over-career/images/mads-mikkelsen_hu783b99b72ccfbd8cde0b2b5b080ae90c_457162_400x0_resize_box_3.png>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -379,6 +367,9 @@ The details behind Coda&rsquo;s custom templates system.
 <div class=postSummary>
 what if we chose to optimize craft over career? It means everything we&rsquo;re doing right now is the most important thing, not just a stepping stone towards some &ldquo;better&rdquo; future.
 </div>
+</div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/craft-over-career/images/mads-mikkelsen_hu783b99b72ccfbd8cde0b2b5b080ae90c_457162_400x0_resize_box_3.png>
 </div>
 </article>
 <article class=postSummaryContainer>
@@ -402,9 +393,6 @@ how do we shape the world before us, especially when the tools and systems we ex
 </div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/mid-twenties/images/buenos-aires_hub8be65e9f6d9084fd0367631e691c5bc_3318555_400x0_resize_q75_box.jpg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -423,11 +411,11 @@ how do we shape the world before us, especially when the tools and systems we ex
 a reflection on turning 24
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/mid-twenties/images/buenos-aires_hub8be65e9f6d9084fd0367631e691c5bc_3318555_400x0_resize_q75_box.jpg>
+</div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/gambling/images/apocalypse_huef52fdcfb95ecc822aa52cec8adcfd6a_1240735_400x0_resize_q75_box.jpg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -446,11 +434,11 @@ a reflection on turning 24
 ✌️2020 | 👋2021.
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/gambling/images/apocalypse_huef52fdcfb95ecc822aa52cec8adcfd6a_1240735_400x0_resize_q75_box.jpg>
+</div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/better-world-delusion/images/fog_hub062491829fb5c48a36876fcc0f768c5_674229_400x0_resize_q75_box.jpg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -469,11 +457,11 @@ a reflection on turning 24
 A critical re-evaluation of the tenets of Silicon Valley and an exploration of society and identity.
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/posts/better-world-delusion/images/fog_hub062491829fb5c48a36876fcc0f768c5_674229_400x0_resize_q75_box.jpg>
+</div>
 </article>
 <article class="postSummaryContainer serif">
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/images/a-twinkle/firefly_hu253ae9e601d80809e409d7e9d5b077b9_655432_400x0_resize_q75_box.jpg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -493,11 +481,11 @@ A critical re-evaluation of the tenets of Silicon Valley and an exploration of s
 Recounting a visceral experience. On light, humans, and meaning.
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/images/a-twinkle/firefly_hu253ae9e601d80809e409d7e9d5b077b9_655432_400x0_resize_q75_box.jpg>
+</div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/images/decoding-your-mind/puzzle_pieces_hu06c753c075d3ad5728e6bcd25ae802c8_171072_400x0_resize_q75_box.jpeg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -515,11 +503,11 @@ Recounting a visceral experience. On light, humans, and meaning.
 Sharing my method to data-empowered journaling and self-reflection
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/images/decoding-your-mind/puzzle_pieces_hu06c753c075d3ad5728e6bcd25ae802c8_171072_400x0_resize_q75_box.jpeg>
+</div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/images/rice-fields/rice-field_hud2fb4e80983b8f3ab68c5fc4317da8ff_1433880_400x0_resize_q75_box.jpeg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -538,11 +526,11 @@ Sharing my method to data-empowered journaling and self-reflection
 How an American-born Chinese navigated teaching and living in Taiwan
 </div>
 </div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/images/rice-fields/rice-field_hud2fb4e80983b8f3ab68c5fc4317da8ff_1433880_400x0_resize_q75_box.jpeg>
+</div>
 </article>
 <article class=postSummaryContainer>
-<div class=postSummaryImageContainer>
-<img loading=lazy class="lazyload postSummaryImage" data-src=/images/stupid-scholars/rollercoaster_huf5fb6f9f6738cf34789601302c0cf51a_1062935_400x0_resize_q75_box.jpeg>
-</div>
 <div class=postSummaryHeader>
 <div class="post summary meta">
 <span>
@@ -560,6 +548,9 @@ How an American-born Chinese navigated teaching and living in Taiwan
 <div class=postSummary>
 A reflection on my university journey
 </div>
+</div>
+<div class=postSummaryImageContainer>
+<img loading=lazy class="lazyload postSummaryImage" data-src=/images/stupid-scholars/rollercoaster_huf5fb6f9f6738cf34789601302c0cf51a_1062935_400x0_resize_q75_box.jpeg>
 </div>
 </article>
 </div>
