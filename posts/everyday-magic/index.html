@@ -67,7 +67,7 @@
 </div>
 <h1 class=title>Everyday Magic
 <div class="emojiContainer inline"><button id=emoji onclick=updateEmoji()></button></div>
-<script>const inputEmojis=["🪄","⚡","🔮","✨"],shuffleArray=a=>{for(let b=a.length-1;b>0;b--){const c=Math.floor(Math.random()*(b+1)),d=a[b];a[b]=a[c],a[c]=d}};let emojis=inputEmojis||['✌️','😤','🥸','👀','💫','🍥','☔️'];shuffleArray(emojis);var idx=0;function updateEmoji(){let a=emojis[idx];document.getElementById('emoji').innerHTML=a,idx=(idx+1)%emojis.length}updateEmoji()</script>
+<script>const defaultEmojis=['🌱','👺','🍥','☔️','🌑','🥑','🐙'],inputEmojis=["🪄","⚡","🔮","✨"],shuffleArray=a=>{for(let b=a.length-1;b>0;b--){const c=Math.floor(Math.random()*(b+1)),d=a[b];a[b]=a[c],a[c]=d}};let emojis=inputEmojis||defaultEmojis;shuffleArray(emojis);var idx=0;function updateEmoji(){let a=emojis[idx];document.getElementById('emoji').innerHTML=a,idx=(idx+1)%emojis.length}updateEmoji()</script>
 </h1>
 <h3 class=description>Tech is magical, but it shouldn&rsquo;t be mysterious.</h3>
 <div>
@@ -142,7 +142,7 @@
 <p>As software powers more of how we think, love, and live, it becomes increasingly crucial to empower individuals with agency in the technology they rely upon every day.</p>
 <p>As technologists, we have the privilege of being able to demystify and change how this magic operates and manifests itself. Our responsibility to our communities is to share this power with the end-users of our creations, shifting power from faceless companies to passionate humans. The magic is in our hands, and we must set it free.</p>
 <p>Can we build towards a world where all technology inspires and gives hope and calls us in? Many have sat by while crucial software deprives people of agency. Instead, let&rsquo;s fight for a future where all are wizards, magic is as common as the air we breathe, and it&rsquo;s second nature for people to shape it into something personally meaningful.</p>
-<p>Thanks to <a href=https://twitter.com/jessicadai_>Jessica Dai</a> for the thorough and precise editing, and <a href=https://nickelthoughts.substack.com/>Avery Jordan</a>, <a href=http://jamie-wong.com/>Jamie Wong</a>, and <a href=https://twitter.com/ameeshsh>Ameesh Shah</a> for giving feedback on early drafts of this article.</p>
+<p>Thanks to <a href=https://twitter.com/jessicadai_>Jessica Dai</a> for the thorough and precise editing, and <a href=https://nickelthoughts.substack.com/>Avery Jordan</a>, <a href=http://jamie-wong.com/>Jamie Wong</a>, Rex Ledesma, and <a href=https://twitter.com/ameeshsh>Ameesh Shah</a> for giving feedback on early drafts of this article.</p>
 <h3 id=related-resources>Related Resources</h3>
 <ul>
 <li><a href=https://www.inkandswitch.com/>Ink and Switch</a> is a research lab that has done a lot of research into how to make technology more compatible with humans, and they have a great podcast called <a href=https://museapp.com/podcast/>Metamuse</a> with people who work towards more agencyful apps.</li>
