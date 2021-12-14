@@ -2,17 +2,17 @@
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
 <head>
 <meta charset=utf-8>
-<title>Postal Portals 📫</title>
+<title>Postal Portals</title>
 <meta name=description content="A letter series with friends to snapshot a deep-dive into what's on our minds.">
 <meta name=keywords content>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.spencerchang.me/experiments/postal-portals/">
-<meta property="og:title" content="Postal Portals 📫">
+<meta property="og:title" content="Postal Portals">
 <meta property="og:description" content="A letter series with friends to snapshot a deep-dive into what's on our minds.">
 <meta property="og:image" content="https://www.spencerchang.me">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:domain value=https://www.spencerchang.me>
-<meta name=twitter:title value="Postal Portals 📫">
+<meta name=twitter:title value="Postal Portals">
 <meta name=twitter:description value="A letter series with friends to snapshot a deep-dive into what's on our minds.">
 <meta name=twitter:image content="https://www.spencerchang.me">
 <meta name=twitter:url value=https://www.spencerchang.me/experiments/postal-portals/>
@@ -55,7 +55,10 @@
 </nav>
 <div id=content>
 <div class=headerContainer>
-<h1>Postal Portals 📫</h1>
+<h1>Postal Portals
+<div class="emojiContainer inline"><button id=emoji onclick=updateEmoji()></button></div>
+<script>const defaultEmojis=['🌱','👺','🍥','☔️','🌑','🥑','🐙'],inputEmojis=["📫","📨"],shuffleArray=a=>{for(let b=a.length-1;b>0;b--){const c=Math.floor(Math.random()*(b+1)),d=a[b];a[b]=a[c],a[c]=d}};let emojis=inputEmojis||defaultEmojis;shuffleArray(emojis);var idx=0;function updateEmoji(){let a=emojis[idx];document.getElementById('emoji').innerHTML=a,idx=(idx+1)%emojis.length}updateEmoji()</script>
+</h1>
 </div>
 <div class=mainContainer>
 <div class=listDescription>

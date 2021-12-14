@@ -55,7 +55,10 @@
 </nav>
 <div id=content>
 <div class=headerContainer>
-<h1>Experiments</h1>
+<h1>Experiments
+<div class="emojiContainer inline"><button id=emoji onclick=updateEmoji()></button></div>
+<script>const defaultEmojis=['🌱','👺','🍥','☔️','🌑','🥑','🐙'],inputEmojis=null,shuffleArray=a=>{for(let b=a.length-1;b>0;b--){const c=Math.floor(Math.random()*(b+1)),d=a[b];a[b]=a[c],a[c]=d}};let emojis=inputEmojis||defaultEmojis;shuffleArray(emojis);var idx=0;function updateEmoji(){let a=emojis[idx];document.getElementById('emoji').innerHTML=a,idx=(idx+1)%emojis.length}updateEmoji()</script>
+</h1>
 </div>
 <div class=mainContainer>
 <div class=listDescription>
@@ -70,7 +73,7 @@
 </span>
 </div>
 <h2 class=postSummaryTitle>
-<a href=/experiments/postal-portals/>Postal Portals 📫</a>
+<a href=/experiments/postal-portals/>Postal Portals</a>
 </h2>
 <div class=postSummary>
 A letter series with friends to snapshot a deep-dive into what&rsquo;s on our minds.
@@ -86,7 +89,7 @@ A letter series with friends to snapshot a deep-dive into what&rsquo;s on our mi
 </span>
 </div>
 <h2 class=postSummaryTitle>
-<a href=/experiments/100posts/>100 mini-essays 📝</a>
+<a href=/experiments/100posts/>100 mini-essays</a>
 </h2>
 <div class=postSummary>
 an experiment to write and publish 100 mini-essays by logging my normally private thoughts publicly every day.
